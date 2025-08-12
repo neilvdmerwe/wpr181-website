@@ -51,6 +51,9 @@ header {
     column-gap: 16rem;
     padding: 1rem 2rem;
     background: var(--primary-background);
+    position: sticky;
+    top: 0;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.25));
 }
 
 header h1 {
