@@ -2,6 +2,12 @@
 <html>
 <head>
     <title>HowToWeb</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -9,16 +15,8 @@
 
         <nav>
             <ul>
-                <li><a href="/home">Home</a></li>
-                <li>
-                    <details>
-                        <summary>Guide</summary>
-                        <ul>
-                            <li><a href="guide/introduction-html">Introduction to HTML</a></li>
-                            <li><a href="guide/introduction-html">Introduction to HTML</a></li>
-                        </ul>
-                    </details>
-                </li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/course">Course</a></li>
                 <li><a href="/resources">Resources</a></li>
                 <li><a href="/about">About</a></li>                
                 <li><a href="/contact">Contact Us</a></li>
@@ -28,8 +26,42 @@
 
     <main>
         <article>
-            <h2>A guide to the basics of web development</h2>
-            <p>This comprehensive online guide will show you the foundational steps to start out with web development.</p>
+            <section id="image-section">
+                <img src="img/web-development.png" alt="Close up of HTML code on a computer screen">
+            </section>
+
+            <section>
+                <h2>A guide to the basics of web development</h2>
+                <h3>This comprehensive online guide will show you the foundational steps to start out with web development.</h3>
+                <a href="/course"><button>Get Started</button></a>
+                <a href="/resources/css"><button>Resources</button></a>
+            </section>
+        </article>
+
+        <article>
+            <section id="image-section">
+                <img src="img/html5.png" alt="HTML logo">
+            </section>
+
+            <section>
+                <h2>Introduction to HTML</h2>
+                <h3>HTML or HyperText Markup Language, is a language that defines the structure of a web page by using various different elements and semantics.</h3>
+                <a href="/course"><button>Get Started</button></a>
+                <a href="/resources/html"><button>Resources</button></a>
+            </section>
+        </article>
+
+        <article>
+            <section id="image-section">
+                <img src="img/css.png" alt="CSS logo">
+            </section>
+            
+            <section>
+                <h2>Introduction to CSS</h2>
+                <h3>CSS or Cascading Style Sheets, is a language used in combination with HTML to define custom styles for elements on a web page.</h3>
+                <a href="/course"><button>Get Started</button></a>
+                <a href="/resources/css"><button>Resources</button></a>
+            </section>
         </article>
     </main>
 
