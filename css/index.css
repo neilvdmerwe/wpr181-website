@@ -69,6 +69,11 @@ header nav ul {
     text-align: right;
 }
 
+#selected-nav {
+    background-color: var(--secondary-background);
+    border-bottom: 3px solid var(--text);
+}
+
 header nav a {
     padding: 0.5rem 1.5rem;
     background-color: transparent;
