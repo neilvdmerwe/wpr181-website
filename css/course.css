@@ -157,4 +157,9 @@ article {
 footer {
     padding: 0.5rem;
     background: var(--primary-background);
+    bottom: 0;
+}
+
+body {
+    margin: 0;
 }
