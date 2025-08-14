@@ -39,12 +39,12 @@ main nav a:active {
 
 main nav li:hover {
     background: rgba(182, 199, 202, 50%);
-    transition: all ease-in-out 150ms;
+    transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
 }
 
 main nav li:active {
     background: var(--primary-background);
-    transition: all ease-in-out 150ms;
+    transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
 }
 
 article {

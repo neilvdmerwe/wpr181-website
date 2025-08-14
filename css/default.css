@@ -117,16 +117,8 @@ button:active {
     transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
 }
 
-a button:hover {
-    border: 0 none;
-}
-
-a button:hover {
-    border: 0 none;
-}
-
 footer {
-    padding: 0.5rem;
+    padding: 1rem 2rem;
     background: var(--primary-background);
     bottom: 0;
 }
@@ -139,20 +131,23 @@ body {
     margin: 0;
 }
 
-a {
+a, a:link, a:active, a:hover, a:visited {
     text-decoration: none;
+}
+
+p a {
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
     transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
 }
 
-a:hover {
+p a:hover {
     background: rgba(182, 199, 202, 50%);
     border-radius: 2px;
     transition: all cubic-bezier(0.5, 0, 0.5, 1);
 }
 
-a:active {
+p a:active {
     background: var(--secondary-background);
     border: 1px solid var(--primary);
     transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
