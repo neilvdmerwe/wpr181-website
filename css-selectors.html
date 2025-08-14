@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HowToWeb</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/lesson.css">
+    <link rel="stylesheet" href="/css/course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>HowToWeb</h1>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a id="selected-nav" href="/course">Course</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/about">About</a></li>                
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="/course/introduction-html">Introduction to HTML</a></li>
+                <li><a href="/course/html-elements">HTML Elements</a></li>
+                <li><a href="/course/html-document-layout">HTML Document Layout</a></li>
+                <li><a href="/course/html-lists">HTML Lists</a></li>
+                <li><a href="/course/html-styles">HTML Styles</a></li>
+                <li><a href="/course/html-semantics">HTML Semantics</a></li>
+                <li><a href="/course/introduction-css">Introduction to CSS</a></li>
+                <li><a href="/course/css-box-model">CSS Box Model</a></li>
+                <li id="selected-lesson"><a href="/course/css-selectors">CSS Selectors</a></li>
+                <li><a href="/course/css-text">CSS Text</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>CSS Selectors</h2>
+
+            <p>CSS selectors are patterns used to target specific HTML elements so you can apply styles to them. They tell the browser which elements a CSS rule should affect. There are several types of selectors, each serving a different purpose.</p>
+
+            <p>The type selector selects all elements of a given HTML tag.</p>
+
+<pre><code><span class="tag">p</span> {
+  <span class="attribute">color</span>: <span class="string">blue</span>;
+}</code></pre>
+
+            <p>This changes the text color of all &lt;p&gt; elements to blue.</p>
+
+            <p>The class selector selects elements with a specific class attribute. Classes start with a dot in CSS.</p>
+
+<pre><code><span class="tag">.highlight</span> {
+  <span class="attribute">background-color</span>: <span class="string">yellow</span>;
+}</code></pre>
+
+            <p>Any element with the attribute class="highlight" will have a yellow background.</p>
+
+            <p>The ID selector selects a single element with a specific id attribute. IDs start with a hash (#) in CSS.</p>
+
+<pre><code><span class="tag">#main-title</span> {
+  <span class="attribute">font-size</span>: <span class="string">24px</span>;
+}</code></pre>
+
+            <p>Only the element with id="main-title" will get this style.</p>
+
+            <p>The descendant selector targets elements inside another element.</p>
+
+<pre><code><span class="tag">div p</span> {
+  <span class="attribute">color</span>: <span class="string">green</span>;
+}</code></pre>
+
+            <p>The element &lt;p&gt; is inside the &lt;div&gt; in this example. This makes all &lt;p&gt; elements inside a &lt;div&gt; green.</p>
+
+            <p>You can also use commas to apply the same style to multiple selectors. This works with elements, classes and IDs.</p>
+
+<pre><code><span class="tag">h1, #header-two, .cool-button</span> {
+  <span class="attribute">font-family</span>: <span class="string">Arial, sans-serif</span>;
+}</code></pre>
+
+            <p>CSS selectors also support wildcards.</p>
+
+<pre><code><span class="tag">*</span> {
+  <span class="attribute">margin</span>: <span class="string">0</span>;
+  <span class="attribute">padding</span>: <span class="string">0</span>;
+}</code></pre>
+
+            <p>This removes all default margins and padding from every element.</p>
+
+            <p>Selectors are the foundation of CSS because they determine exactly where your styles will be applied. By combining them, you can target very specific parts of your page without affecting others.</p>
+
+            <a href="/course/css-text"><button>Continue</button></a>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>This website uses a <a href="https://www.noip.com/">No-IP</a> domain and is hosted with <a href="https://www.apachefriends.org/">XAMPP</a>.</p>
+        <p>Image attributions and credits can be found on the <a href="/about">About</a> page.</p>
+    </footer>
+</body>
+</html>

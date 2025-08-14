@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HowToWeb</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/lesson.css">
+    <link rel="stylesheet" href="/css/course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>HowToWeb</h1>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a id="selected-nav" href="/course">Course</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/about">About</a></li>                
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="/course/introduction-html">Introduction to HTML</a></li>
+                <li><a href="/course/html-elements">HTML Elements</a></li>
+                <li><a href="/course/html-document-layout">HTML Document Layout</a></li>
+                <li><a href="/course/html-lists">HTML Lists</a></li>
+                <li><a href="/course/html-styles">HTML Styles</a></li>
+                <li><a href="/course/html-semantics">HTML Semantics</a></li>
+                <li><a href="/course/introduction-css">Introduction to CSS</a></li>
+                <li id="selected-lesson"><a href="/course/css-box-model">CSS Box Model</a></li>
+                <li><a href="/course/css-selectors">CSS Selectors</a></li>
+                <li><a href="/course/css-text">CSS Text</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>CSS Box Model</h2>
+
+            <p>The CSS box model is the way web browsers understand and display the size and spacing of every element on a page. In CSS, every element is treated as a rectangular box made up of four main parts: content, padding, border, and margin.</p>
+
+            <img id="box-model" src="/img/css-box-model.png" alt="CSS Box Model with content, padding, border and margin">
+
+            <p>The content's size is defined by the width and height of an element.</p>
+
+<pre><code><span class="tag">div</span> {
+  <span class="attribute">width</span>: <span class="string">200px</span>;
+  <span class="attribute">padding</span>: <span class="string">10px</span>;
+  <span class="attribute">border</span>: <span class="string">2px solid black</span>;
+  <span class="attribute">margin</span>: <span class="string">15px</span>;
+}</code></pre>
+
+            <p>In this example, the content area is 200px wide, there's 10px of padding inside the border, a 2px border around it, and 15px of space separating it from other elements.</p>
+
+            <p>Understanding the box model is essential because it affects the total space an element takes up on the page. By adding up the content width, padding, border, and margin, you can calculate the full size of any element.</p>
+
+            <p>Next, we will learn about different types of selectors.</p>
+
+            <a href="/course/css-selectors"><button>Continue</button></a>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>This website uses a <a href="https://www.noip.com/">No-IP</a> domain and is hosted with <a href="https://www.apachefriends.org/">XAMPP</a>.</p>
+        <p>Image attributions and credits can be found on the <a href="/about">About</a> page.</p>
+    </footer>
+</body>
+</html>

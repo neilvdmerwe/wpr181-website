@@ -41,8 +41,16 @@ code {
     color: #98C371;
 }
 
-.image {
+img {
     display: block;
+}
+
+.image {    
     filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.187));
     margin-bottom: 1rem;
+}
+
+#box-model {
+    width: 35rem;
+    border-radius: 0;
 }

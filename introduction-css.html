@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HowToWeb</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/lesson.css">
+    <link rel="stylesheet" href="/css/course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>HowToWeb</h1>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a id="selected-nav" href="/course">Course</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/about">About</a></li>                
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="/course/introduction-html">Introduction to HTML</a></li>
+                <li><a href="/course/html-elements">HTML Elements</a></li>
+                <li><a href="/course/html-document-layout">HTML Document Layout</a></li>
+                <li><a href="/course/html-lists">HTML Lists</a></li>
+                <li><a href="/course/html-styles">HTML Styles</a></li>
+                <li><a href="/course/html-semantics">HTML Semantics</a></li>
+                <li id="selected-lesson"><a href="/course/introduction-css">Introduction to CSS</a></li>
+                <li><a href="/course/css-box-model">CSS Box Model</a></li>
+                <li><a href="/course/css-selectors">CSS Selectors</a></li>
+                <li><a href="/course/css-text">CSS Text</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Introduction to CSS</h2>
+
+            <p>CSS stands for Cascading Style Sheets. It is the language used to control the appearance and layout of HTML elements on a web page. While HTML provides the structure of the page, CSS changes how that structure looks by controlling things like colors, fonts, spacing, and positioning.</p>
+
+            <p>CSS works by using rules that target HTML elements and apply styles to them. A CSS rule has two main parts: a selector and a set of properties. The selector chooses which elements to style, and the properties define what changes to make. Each property has a value that describes how it should look.</p>
+
+            <p>For example, if you want all paragraph text to be blue and slightly larger, you could write:</p>            
+            
+<pre>
+<code><span class="tag">p</span> {
+  <span class="attribute">color</span>: <span class="string">blue</span>;
+  <span class="attribute">font-size</span>: <span class="string">18px</span>;
+}</code>
+</pre>
+
+            <p>Next lesson we will learn about the model that CSS works off of.</p>
+
+            <a href="/course/css-box-model"><button>Continue</button></a>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>This website uses a <a href="https://www.noip.com/">No-IP</a> domain and is hosted with <a href="https://www.apachefriends.org/">XAMPP</a>.</p>
+        <p>Image attributions and credits can be found on the <a href="/about">About</a> page.</p>
+    </footer>
+</body>
+</html>
