@@ -3,9 +3,9 @@
 <head>
     <title>HowToWeb</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="http://localhost:52330/css/default.css">
-    <link rel="stylesheet" href="http://localhost:52330/css/lesson.css">
-    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/lesson.css">
+    <link rel="stylesheet" href="/css/course.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -48,33 +48,65 @@
             <h3>Elements</h3>
             <p>In HTML, elements are the basic building blocks that make up a web page.</p>
             <p>An element usually has three parts: an opening tag, content, and a closing tag.</p>
-            <img src="" alt="Image explaining tags">
+
+<pre>
+<code><span class="tag">&lt;tag&gt;</span>Content<span class="tag">&lt;/tag&gt;</span></code>
+</pre>
+            
             <p>The opening tag tells the browser what kind of content is coming, and the closing tag tells it where that content ends.</p>
-            <p>For example, if you want to write a paragraph, you use the &lt;p&gt; element: </p>
-            <img src="" alt="Image explaining paragraph element">
-            <p>Here, &lt;p&gt; is the opening tag, I'm a paragraph! is the content, and &lt;/p&gt; is the closing tag. The browser then knows to 
+            <p>For example, if you want to write a paragraph, you use the <span class="code">&lt;p&gt;</span> element: </p>
+
+<pre>
+<code><span class="tag">&lt;p&gt;</span>I'm a paragraph!<span class="tag">&lt;/p&gt;</span></code>
+</pre>
+
+            <p>Here, <span class="code">&lt;p&gt;</span> is the opening tag, <span class="code">I'm a paragraph!</span> is the content, and <span class="code">&lt;p&gt;</span> is the closing tag. The browser then knows to 
             display that text as a paragraph.</p>
             <p>Elements can also be nested inside each other. This is mostly used when you want specific contents of an element to display 
             differently.</p>
-            <img src="" alt="Image explaining nested elements">
-            <p>The &lt;strong&gt; element here is nested inside the &lt;p&gt; element, to make the words appear in bold.</p>
+
+<pre>
+<code><span class="tag">&lt;p&gt;</span>This is a <span class="tag">&lt;strong&gt;</span>very important<span class="tag">&lt;/strong&gt;</span> sentence.<span class="tag">&lt;/p&gt;</span></code>
+</pre>
+
+            <p>The <span class="code">&lt;strong&gt;</span> element here is nested inside the <span class="code">&lt;p&gt;</span> element, to make the words appear in bold.</p>
             <p>Elements can also be written on separate lines, and HTML will display it the same as if it were written on one line.</p>
             <p>So this: </p>
-            <img src="" alt="Image explaining nested elements">
+
+<pre>
+<code><span class="tag">&lt;p&gt;</span>This is a <span class="tag">&lt;strong&gt;</span>very important<span class="tag">&lt;/strong&gt;</span> sentence.<span class="tag">&lt;/p&gt;</span></code>
+</pre>
+            
             <p>Is the same as this: </p>
-            <img src="" alt="Image showcasing a different nesting structure">
+
+<pre>
+<code><span class="tag">&lt;p&gt;</span>
+    This is a
+    <span class="tag">&lt;strong&gt;</span>very important<span class="tag">&lt;/strong&gt;</span>
+    sentence.
+<span class="tag">&lt;/p&gt;</span></code>
+</pre>
+
             <p>Some elements work differently and don't need closing tags. These are called self-closing elements.</p>
-            <p>Some elements don't need closing tags. These are called self-closing elements. The most common one is the img tag.</p>
-            <img src="" alt="Image showcasing the img element">
+            <p>Some elements don't need closing tags. These are called self-closing elements. The most common one is the <span class="code">&lt;img&gt;</span> tag.</p>
+
+<pre>
+<code><span class="tag">&lt;img</span> <span class="attribute">src</span>=<span class="string">"hello.png"</span><span class="tag">&gt;</span></code>
+</pre>
+
             <h3>Attributes</h3>
-            <p> Attributes are extra pieces of information you add to an element’s opening tag to change its behavior or provide more 
+            <p> Attributes are extra pieces of information you add to an element's opening tag to change its behavior or provide more 
             details. They work like settings for an element.</p>
-            <p>For example, if you want to create a link, you can use the anchor &lt;a&gt; element and set its href attribute to the URL you 
+            <p>For example, if you want to create a link, you can use the anchor <span class="code">&lt;a&gt;</span> element and set its <span class="code">href</span> attribute to the URL you 
             want:</p>
-            <img src="" alt="Image explaining the anchor element">
+
+<pre>
+<code><span class="tag">&lt;a</span> <span class="attribute">href</span>=<span class="string">"https://example.com"</span><span class="tag">&gt;</span>Visit Example<span class="tag">&lt;/a&gt;</span></code>
+</pre>
+
             <p>The next lesson will describe how we use these elements to form the basic structure of a web page.</p>
             
-            <a href="/course/html-document-layout.html"><button>Continue</button></a>
+            <a href="/course/html-document-layout"><button>Continue</button></a>
         </article>
 
     </main>

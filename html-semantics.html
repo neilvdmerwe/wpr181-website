@@ -4,6 +4,7 @@
     <title>HowToWeb</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/lesson.css">
     <link rel="stylesheet" href="/css/course.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,7 @@
                 <li><a href="/course/html-document-layout">HTML Document Layout</a></li>
                 <li><a href="/course/html-lists">HTML Lists</a></li>
                 <li><a href="/course/html-styles">HTML Styles</a></li>
-                <li><a href="/course/html-semantics">HTML Semantics</a></li>
+                <li id="selected-lesson"><a href="/course/html-semantics">HTML Semantics</a></li>
                 <li><a href="/course/introduction-css">Introduction to CSS</a></li>
                 <li><a href="/course/css-box-model">CSS Box Model</a></li>
                 <li><a href="/course/css-selectors">CSS Selectors</a></li>
@@ -43,29 +44,42 @@
         </nav>
 
         <article>
-            <section>
-                <img src="/img/html-css.png" alt="CSS and HTML logos next to each other">
-            </section>
+            <h2>HTML Semantics</h2>
+            <p> HTML semantics means using HTML elements that have a clear and specific meaning about the type of content they hold. Instead 
+            of just telling the browser how something should look, semantic elements describe what the content is.</p>
+            <p>For example, <span class="code">&lt;header&gt;</span> is meant for the top section of a page or section, <span class="code">&lt;nav&gt;</span> is for navigation links, <span class="code">&lt;article&gt;</span> is for a 
+            standalone piece of content, and <span class="code">&lt;footer&gt;</span> is for the bottom section of a page. These names make your HTML easier to read and 
+            help search engines and assistive technologies understand your content better.</p>
+            <p>Here is an example of what the <span class="code">&lt;body&gt;</span> would contain when using HTML semantics:</p>
 
-            <section>
-                <h2>Welcome to the course</h2>
-                <h3>This course will teach you the basics of web programming and development.</h3>
-                <p>
-                    We will go over base concepts like the HTML structure and CSS box model. 
-                    You will learn fundamental concepts within HTML and CSS to help you kickstart your web development journey.
-                </p>
-                <p>
-                    You can go back to any of the lessons at any time by clicking the links on the left-hand side.
-                </p>
-                <a href="/course/introduction-html"><button>Continue</button></a>
-            </section>
+<pre>
+<code><span class="tag">&lt;header&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>My Blog<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;/header&gt;</span>
+
+<span class="tag">&lt;nav&gt;</span>
+  <span class="tag">&lt;a</span> <span class="attribute">href</span>=<span class="string">"home.html"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span>
+  <span class="tag">&lt;a</span> <span class="attribute">href</span>=<span class="string">"about.html"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;/nav&gt;</span>
+
+<span class="tag">&lt;article&gt;</span>
+  <span class="tag">&lt;h2&gt;</span>My First Post<span class="tag">&lt;/h2&gt;</span>
+  <span class="tag">&lt;p&gt;</span>This is the content of my first blog post.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/article&gt;</span>
+
+<span class="tag">&lt;footer&gt;</span>
+  <span class="tag">&lt;p&gt;</span>Copyright 2025 My Blog<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/footer&gt;</span></code>
+</pre>
+            <br>
+            <a href="/course/introduction-css"><button>Continue</button></a>
         </article>
+
     </main>
 
     <footer>
         <p>This website uses a <a href="https://www.noip.com/">No-IP</a> domain and is hosted with <a href="https://www.apachefriends.org/">XAMPP</a>.</p>
         <p>Image attributions and credits can be found on the <a href="/about">About</a> page.</p>
     </footer>
-    
 </body>
 </html>

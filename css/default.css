@@ -4,6 +4,8 @@
     --primary-background: #F4F4F4;
     --secondary-background: #B6C7CA;
     --primary: #4BA6DF;
+    --secondary: #D19A66;
+    --tertiary: #98C371;
 
     color: var(--text);
     background: var(--secondary-background);

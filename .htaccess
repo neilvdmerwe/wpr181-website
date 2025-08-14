@@ -1,7 +1,14 @@
 RewriteEngine On
 
-RewriteRule ^course$ course.html [L]
-RewriteRule ^course/([^/]+)$ course/$1.html [L]
+RewriteRule ^course/$ course.html [L]
+RewriteRule ^course/html-document-layout$ html-document-layout.html [L]
+RewriteRule ^course/html-elements$ html-elements.html [L]
+RewriteRule ^course/html-lists$ html-lists.html [L]
+RewriteRule ^course/html-semantics$ html-semantics.html [L]
+RewriteRule ^course/html-styles$ html-styles.html [L]
+RewriteRule ^course/introduction-html$ introduction-html.html [L]
 RewriteRule ^about$ about.html [L]
 RewriteRule ^contact$ contact.html [L]
 RewriteRule ^resources$ resources.html [L]
+
+Options -Indexes

@@ -3,9 +3,9 @@
 <head>
     <title>HowToWeb</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="http://localhost:52330/css/default.css">
-    <link rel="stylesheet" href="http://localhost:52330/css/lesson.css">
-    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/lesson.css">
+    <link rel="stylesheet" href="/css/course.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -48,27 +48,83 @@
             <p> A normal HTML document has a specific structure that helps browsers understand and display the page correctly. It follows a top
             to-bottom layout, with certain required elements.</p>
             <p>This is the basic structure of an HTML document: </p>
-            <img src="" alt="Image showcasing basic structure of HTML">
+
+<pre>
+<code><span class="tag">&lt;!DOCTYPE <span class="attribute">html</span>&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>My First Web Page<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Welcome to My Website<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This is my very first web page using HTML.<span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code>
+</pre>
+
             <p>Let's break it down.</p>
             <p>The first line declares the document type as HTML. This line is not required, but it's good practice to have it.</p>
-            <img src="" alt="Image showcasing DOCTYPE">
+
+<pre>
+<code><span class="tag">&lt;!DOCTYPE <span class="attribute">html</span>&gt;</span></code>
+</pre>
+
             <p>The second line starts with &lt;html&gt;. This element declares when the web page starts. You'll put all the elements you need to build 
             the structure of the web page, in this element. Remember that this element has a closing tag &lt;/html&gt; at the end of the 
             document.</p>
-            <img src="" alt="Image showcasing HTML element">
+
+<pre>
+<code><span class="tag">&lt;html&gt;</span></code>
+</pre>
+
             <p>Like a human, it has a head, and then a body underneath, like this:</p>
-            <img src="" alt="Image showcasing the skeleton of a HTML layout">
+
+<pre>
+<code><span class="tag">&lt;head&gt;</span>
+  ...
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+  ...
+<span class="tag">&lt;/body&gt;</span></code>
+</pre>
+
             <p> Inside the head, is the title of the web page. This is the title you see when you look at the tab of the web page.</p>
-            <img src="" alt="Image showcasing title element in the browser">
-            <img src="" alt="Image showcasing the title element in VS Code">
+            <img class="image" src="/img/tab.png">
+
+<pre>
+<code><span class="tag">&lt;head&gt;</span>
+  <span class="tag">&lt;title&gt;</span>My First Web Page<span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;/head&gt;</span></code>
+</pre>
+
             <p>Next is the body. The body contains all the elements that are actually displayed on the web page. Here you can use heading tags 
             like &lt;h1&gt; or tags for text like &lt;p&gt;</p>
-            <img src="" alt="Image showcasing the body element">
+
+<pre>
+<code><span class="tag">&lt;body&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>Welcome to My Website<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;p&gt;</span>This is my very first web page using HTML.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/body&gt;</span></code>
+</pre>
+
             <p>And that's the basic structure of an HTML document. Take a good look at the example again.</p>
-            <img src="" alt="Image showcasing basic structure of HTML">
+
+<pre>
+<code><span class="tag">&lt;!DOCTYPE <span class="attribute">html</span>&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>My First Web Page<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Welcome to My Website<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This is my very first web page using HTML.<span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code>
+</pre>
+
             <p>Next lesson will explain how to make HTML lists and headings.</p>
             
-            <a href="/course/"><button>Continue</button></a>
+            <a href="/course/html-lists"><button>Continue</button></a>
         </article>
 
     </main>

@@ -3,9 +3,9 @@
 <head>
     <title>HowToWeb</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="http://localhost:52330/css/default.css">
-    <link rel="stylesheet" href="http://localhost:52330/css/lesson.css">
-    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/lesson.css">
+    <link rel="stylesheet" href="/css/course.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -46,17 +46,31 @@
         <article>
             <h2>HTML Lists & Headings</h2>
             <h3>Headings</h3>
-            <p>Headings are used to create titles and subtitles in your content. HTML has six levels of headings, from &lt;h1&gt; to &lt;h6&gt;.</p>
-            <p>&lt;h1&gt; is the largest and most important heading, usually used for the main title.</p>
-            <p>&lt;h6&gt; is the smallest and least important.</p>
+            <p>Headings are used to create titles and subtitles in your content. HTML has six levels of headings, from <span class="code">&lt;h1&gt;</span> to <span class="code">&lt;h6&gt;</span>.</p>
+            <p><span class="code">&lt;h1&gt;</span> is the largest and most important heading, usually used for the main title.</p>
+            <p><span class="code">&lt;h6&gt;</span> is the smallest and least important.</p>
             <p>Example:</p>
-            <img src="" alt="Image showcasing H1 H2 H3 in VS Code">
+
+<pre>
+<code><span class="tag">&lt;h1&gt;</span>Main Title<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>Section Title<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h3&gt;</span>Subsection Title<span class="tag">&lt;/h3&gt;</span></code>
+</pre>
+
             <h3>Lists</h3>
-            <p>Lists are used to group related items together. There are two types of list elements in HTML. Both of these elements have the &lt;li&gt; 
+            <p>Lists are used to group related items together. There are two types of list elements in HTML. Both of these elements have the <span class="code">&lt;li&gt;</span> 
             tag inside of them, which stands for list item. The list item tag defines an item in the list, and can contain anything like text, 
             paragraphs, links etc.</p>
             <p>The first type of list is the unordered list. It displays a list of items using bullets.</p>
-            <img src="" alt="Image showcasing UL in VS Code">
+
+<pre>
+<code><span class="tag">&lt;ul&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Apples<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Bananas<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Cherries<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></code>
+</pre>
+
             <p>The page would look something like this:</p>
             <ul>
                 <li>Apples</li>
@@ -64,7 +78,15 @@
                 <li>Cherries</li>
             </ul>
             <p>The second type of list is the ordered list. This displays a list in a specific numbered order.</p>
-            <img src="" alt="Image showcasing OL in VS Code">
+
+<pre>
+<code><span class="tag">&lt;ol&gt;</span>
+  <span class="tag">&lt;li&gt;</span>First Step<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Second Step<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Third Step<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span></code>
+</pre>
+
             <p>It would look something like this:</p>
             <ol>
                 <li>First Step</li>

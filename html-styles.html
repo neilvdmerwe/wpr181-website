@@ -3,9 +3,9 @@
 <head>
     <title>HowToWeb</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="http://localhost:52330/css/default.css">
-    <link rel="stylesheet" href="http://localhost:52330/css/lesson.css">
-    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/lesson.css">
+    <link rel="stylesheet" href="/css/course.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -30,11 +30,11 @@
     <main>
         <nav>
             <ul>
-                <li id="selected-lesson"><a href="/course/introduction-html">Introduction to HTML</a></li>
+                <li><a href="/course/introduction-html">Introduction to HTML</a></li>
                 <li><a href="/course/html-elements">HTML Elements</a></li>
                 <li><a href="/course/html-document-layout">HTML Document Layout</a></li>
                 <li><a href="/course/html-lists">HTML Lists</a></li>
-                <li><a href="/course/html-styles">HTML Styles</a></li>
+                <li id="selected-lesson"><a href="/course/html-styles">HTML Styles</a></li>
                 <li><a href="/course/html-semantics">HTML Semantics</a></li>
                 <li><a href="/course/introduction-css">Introduction to CSS</a></li>
                 <li><a href="/course/css-box-model">CSS Box Model</a></li>
@@ -44,19 +44,23 @@
         </nav>
 
         <article>
-            <h2>Introduction to HTML</h2>
-            <h3>What is HTML?</h3>
-            <p>HTML stands for HyperText Markup Language. It is the basic language used to create and structure web pages. Every 
-            website you visit is built using HTML in some way. Think of HTML as the skeleton of a web page. It gives the page its shape 
-            and tells the browser what content to show.</p>
-            <h3>Why use HTML?</h3>
-            <p>HTML is the standard language used to define the basic structure of a web page. Without HTML, a browser would not know 
-            how to structure or show text, images, links, or other elements on a page.</p>
-            <p>It is simple to learn and works on every modern device and browser, making it the universal foundation for websites. HTML 
-            also makes content accessible to search engines and assistive technologies like screen readers, helping people find and use 
-            your site.</p>
-            <p>The next lesson will talk about the basics of HTML and how to use it.</p>
-            <a href="/course/html-elements.html"><button>Continue</button></a>
+            <h2>HTML Styles</h2>
+            <p>Inline HTML styles are a way to apply CSS (Cascading Style Sheets) directly to a single HTML element. You do this by using the style 
+            attribute inside the element's opening tag. This method changes only that one element's appearance without affecting any others.</p>
+            <p>The style attribute contains one or more CSS property-value pairs. The property tells the browser what aspect you want to 
+            change, such as color or font size, and the value tells it how to change it. Each property and value is separated by a colon, and if 
+            you have more than one style, they are separated by semicolons.</p>
+            <p>For example, if you want a paragraph to have blue text and a larger font size, you could write:</p>
+
+<pre>
+<code><span class="tag">&lt;p</span> <span class="attribute">style</span>=<span class="string">"color: blue; font-size: 18px;"</span><span class="tag">&gt;</span>This is a styled paragraph.<span class="tag">&lt;/p&gt;</span></code>
+</pre>
+
+            <p> Inline styles are quick and simple for making small changes, but they are not the best choice for larger projects. This is because 
+            they can make your HTML messy and harder to maintain.</p>
+            <p>In the next lesson we will learn the recommended and user-friendly structure of an HTML document.</p>
+            
+            <a href="/course/html-semantics"><button>Continue</button></a>
         </article>
 
     </main>
