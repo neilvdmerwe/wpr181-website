@@ -1,6 +1,7 @@
 RewriteEngine On
 
 RewriteRule ^course/$ course.html [L]
+RewriteRule ^course$ course.html [L]
 RewriteRule ^course/html-document-layout$ html-document-layout.html [L]
 RewriteRule ^course/html-elements$ html-elements.html [L]
 RewriteRule ^course/html-lists$ html-lists.html [L]
