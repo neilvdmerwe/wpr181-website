@@ -30,10 +30,10 @@
     <main>
         <nav>
             <ul>
-                <li id="selected-lesson"><a href="/course/introduction-html">Introduction to HTML</a></li>
+                <li><a href="/course/introduction-html">Introduction to HTML</a></li>
                 <li><a href="/course/html-elements">HTML Elements</a></li>
                 <li><a href="/course/html-document-layout">HTML Document Layout</a></li>
-                <li><a href="/course/html-lists">HTML Lists</a></li>
+                <li id="selected-lesson"><a href="/course/html-lists">HTML Lists</a></li>
                 <li><a href="/course/html-styles">HTML Styles</a></li>
                 <li><a href="/course/html-semantics">HTML Semantics</a></li>
                 <li><a href="/course/introduction-css">Introduction to CSS</a></li>
@@ -44,19 +44,35 @@
         </nav>
 
         <article>
-            <h2>Introduction to HTML</h2>
-            <h3>What is HTML?</h3>
-            <p>HTML stands for HyperText Markup Language. It is the basic language used to create and structure web pages. Every 
-            website you visit is built using HTML in some way. Think of HTML as the skeleton of a web page. It gives the page its shape 
-            and tells the browser what content to show.</p>
-            <h3>Why use HTML?</h3>
-            <p>HTML is the standard language used to define the basic structure of a web page. Without HTML, a browser would not know 
-            how to structure or show text, images, links, or other elements on a page.</p>
-            <p>It is simple to learn and works on every modern device and browser, making it the universal foundation for websites. HTML 
-            also makes content accessible to search engines and assistive technologies like screen readers, helping people find and use 
-            your site.</p>
-            <p>The next lesson will talk about the basics of HTML and how to use it.</p>
-            <a href="/course/html-elements.html"><button>Continue</button></a>
+            <h2>HTML Lists & Headings</h2>
+            <h3>Headings</h3>
+            <p>Headings are used to create titles and subtitles in your content. HTML has six levels of headings, from &lt;h1&gt; to &lt;h6&gt;.</p>
+            <p>&lt;h1&gt; is the largest and most important heading, usually used for the main title.</p>
+            <p>&lt;h6&gt; is the smallest and least important.</p>
+            <p>Example:</p>
+            <img src="" alt="Image showcasing H1 H2 H3 in VS Code">
+            <h3>Lists</h3>
+            <p>Lists are used to group related items together. There are two types of list elements in HTML. Both of these elements have the &lt;li&gt; 
+            tag inside of them, which stands for list item. The list item tag defines an item in the list, and can contain anything like text, 
+            paragraphs, links etc.</p>
+            <p>The first type of list is the unordered list. It displays a list of items using bullets.</p>
+            <img src="" alt="Image showcasing UL in VS Code">
+            <p>The page would look something like this:</p>
+            <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Cherries</li>
+            </ul>
+            <p>The second type of list is the ordered list. This displays a list in a specific numbered order.</p>
+            <img src="" alt="Image showcasing OL in VS Code">
+            <p>It would look something like this:</p>
+            <ol>
+                <li>First Step</li>
+                <li>Second Step</li>
+                <li>Third Step</li>
+            </ol>
+            <p> Next lesson will introduce inline styling for HTML.</p>
+            <a href="/course/html-styles"><button>Continue</button></a>
         </article>
 
     </main>

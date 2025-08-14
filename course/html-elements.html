@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HowToWeb</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="http://localhost:52330/css/default.css">
+    <link rel="stylesheet" href="http://localhost:52330/css/lesson.css">
+    <link rel="stylesheet" href="css/resources.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>HowToWeb</h1>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a id="selected-nav" href="/course">Course</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/about">About</a></li>                
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="/course/introduction-html">Introduction to HTML</a></li>
+                <li id="selected-lesson"><a href="/course/html-elements">HTML Elements</a></li>
+                <li><a href="/course/html-document-layout">HTML Document Layout</a></li>
+                <li><a href="/course/html-lists">HTML Lists</a></li>
+                <li><a href="/course/html-styles">HTML Styles</a></li>
+                <li><a href="/course/html-semantics">HTML Semantics</a></li>
+                <li><a href="/course/introduction-css">Introduction to CSS</a></li>
+                <li><a href="/course/css-box-model">CSS Box Model</a></li>
+                <li><a href="/course/css-selectors">CSS Selectors</a></li>
+                <li><a href="/course/css-text">CSS Text</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>HTML Elements</h2>
+            <h3>Elements</h3>
+            <p>In HTML, elements are the basic building blocks that make up a web page.</p>
+            <p>An element usually has three parts: an opening tag, content, and a closing tag.</p>
+            <img src="" alt="Image explaining tags">
+            <p>The opening tag tells the browser what kind of content is coming, and the closing tag tells it where that content ends.</p>
+            <p>For example, if you want to write a paragraph, you use the &lt;p&gt; element: </p>
+            <img src="" alt="Image explaining paragraph element">
+            <p>Here, &lt;p&gt; is the opening tag, I'm a paragraph! is the content, and &lt;/p&gt; is the closing tag. The browser then knows to 
+            display that text as a paragraph.</p>
+            <p>Elements can also be nested inside each other. This is mostly used when you want specific contents of an element to display 
+            differently.</p>
+            <img src="" alt="Image explaining nested elements">
+            <p>The &lt;strong&gt; element here is nested inside the &lt;p&gt; element, to make the words appear in bold.</p>
+            <p>Elements can also be written on separate lines, and HTML will display it the same as if it were written on one line.</p>
+            <p>So this: </p>
+            <img src="" alt="Image explaining nested elements">
+            <p>Is the same as this: </p>
+            <img src="" alt="Image showcasing a different nesting structure">
+            <p>Some elements work differently and don't need closing tags. These are called self-closing elements.</p>
+            <p>Some elements don't need closing tags. These are called self-closing elements. The most common one is the img tag.</p>
+            <img src="" alt="Image showcasing the img element">
+            <h3>Attributes</h3>
+            <p> Attributes are extra pieces of information you add to an element’s opening tag to change its behavior or provide more 
+            details. They work like settings for an element.</p>
+            <p>For example, if you want to create a link, you can use the anchor &lt;a&gt; element and set its href attribute to the URL you 
+            want:</p>
+            <img src="" alt="Image explaining the anchor element">
+            <p>The next lesson will describe how we use these elements to form the basic structure of a web page.</p>
+            
+            <a href="/course/html-document-layout.html"><button>Continue</button></a>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>This website uses a <a href="https://www.noip.com/">No-IP</a> domain and is hosted with <a href="https://www.apachefriends.org/">XAMPP</a>.</p>
+        <p>Image attributions and credits can be found on the <a href="/about">About</a> page.</p>
+    </footer>
+</body>
+</html>
