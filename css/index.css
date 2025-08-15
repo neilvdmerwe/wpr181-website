@@ -20,10 +20,12 @@ article {
     column-gap: 4rem;
 }
 
-article img {    
-    width: inherit;
-}
+@media (max-width: 768px) {
+    article {
+        grid-template-columns: 1fr;
+    }
 
-#image-section {
-    width: 27.25rem;
+    article img {
+        display: block;
+    }
 }
