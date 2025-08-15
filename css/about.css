@@ -1,0 +1,6 @@
+article {
+    background: var(--primary-background);
+    margin: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 4px;
+}
