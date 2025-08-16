@@ -1,0 +1,23 @@
+body {
+    height: 100vh;                
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+}
+
+main {
+    display: grid;
+    place-items: center;  
+    padding: 2rem;
+}
+
+article {
+    background: var(--primary-background);
+    padding: 2rem 3rem;
+    border-radius: 4px;
+    grid-column: 2/7;
+}
+
+button {
+    margin: 1rem 0;
+}
