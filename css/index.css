@@ -29,3 +29,13 @@ article {
         display: block;
     }
 }
+
+@media (max-width: 480px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    article img {
+        display: block;
+    }
+}
