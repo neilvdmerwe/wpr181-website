@@ -122,7 +122,6 @@ button:active {
 footer {
     padding: 1rem 2rem;
     background: var(--primary-background);
-    bottom: 0;
 }
 
 img {
