@@ -94,7 +94,7 @@ header nav a:active {
     transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
 }
 
-button {    
+.button {    
     color: var(--text);
     background: var(--primary-background);
     padding: 0.5rem 1.5rem;
@@ -107,14 +107,14 @@ button {
     transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
 }
 
-button:hover {
+.button:hover {
     background: var(--secondary-background);
     outline: 2px solid var(--text);
     cursor: pointer;
     transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
 }
 
-button:active {
+.button:active {
     background: var(--primary-background);
     transition: all cubic-bezier(0.5, 0, 0.5, 1) 150ms;
 }
@@ -134,6 +134,10 @@ body {
 
 a, a:link, a:active, a:hover, a:visited {
     text-decoration: none;
+}
+
+button a {
+    color: var(--text);
 }
 
 p a {
@@ -220,4 +224,20 @@ article {
         padding: 10px;
         border-radius: 5px;
     }
+}
+
+.margin-right {
+    margin-right: 1rem;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.block {
+    display: block;
+}
+
+.width-fit-contents {
+    width: fit-content;
 }

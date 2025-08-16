@@ -2,10 +2,6 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-#article-button {
-    margin-right: 1rem;
-}
-
 main {
     padding: 1rem 2rem;
 }
