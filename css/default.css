@@ -186,9 +186,9 @@ article {
 
     header nav a {
         display: block;
-        width: 200px;            /* fixed width instead of full width */
-        margin: 5px auto;        /* centers block */
-        text-align: center;      /* centers text inside */
+        width: 200px;            
+        margin: 5px auto;        
+        text-align: center;      
         padding: 10px;
         border-radius: 5px;
     }
